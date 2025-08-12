@@ -29,6 +29,7 @@ jobs:
           tasks: check test standalone
 
       - name: Upload Executable
-        uses: upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
+          name: hello
           path: derived/build/hello
