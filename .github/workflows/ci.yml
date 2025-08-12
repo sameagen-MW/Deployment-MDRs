@@ -40,3 +40,8 @@ jobs:
         uses: matlab-actions/run-build@v2
         with:
           tasks: check test standalone
+
+      - name: Upload Executable
+        uses: upload-artifact@v4
+        with:
+          path: derived/build/hello
