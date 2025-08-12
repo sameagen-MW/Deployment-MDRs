@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MLM_LICENSE_TOKEN: ${{ secrets.matlab_token }
+      MLM_LICENSE_TOKEN: ${{ secrets.matlab_token }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
