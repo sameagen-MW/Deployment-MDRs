@@ -10,8 +10,8 @@ plan("test") = TestTask;
 plan.DefaultTasks = ["check" "test"];
 end
 
-function standaloneTask(~)
-projectRoot = "/home/sameagen/Deployment-MDRs";
+function standaloneTask(ctx)
+projectRoot = ctx.Plan.Project.RootFolder;
 
 % Create target build options object, set build properties and build.
 buildOpts = compiler.build.StandaloneApplicationOptions(fullfile(projectRoot, "src", "hello.m"));
