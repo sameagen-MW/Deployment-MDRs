@@ -1,0 +1,34 @@
+name = "Deployment-MDRs"
+
+[folders]
+path = [
+	"src"
+]
+test = [
+	"tests"
+]
+
+[project.labels.Classification]
+Test = [
+	"tests/*.m"
+]
+
+[project.labels.Hello]
+"Main Function" = [
+	"src/hello.m"
+]
+
+[[compiler.standalone]]
+[compiler.standalone.build]
+executable-name = "hello"
+executable-version = "1.0.0"
+treat-inputs-as-numeric = false
+output-dir = "derived/build"
+app-file-label = {category = "Hello", label = "Main Function"}
+
+[compiler.standalone.package]
+application-name = "Hello App"
+version = "1.0.0"
+author-name = "Sam Eagen"
+summary = "App for greeting"
+output-dir = "derived/package"
