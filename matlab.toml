@@ -24,7 +24,7 @@ executable-name = "hello"
 executable-version = "1.0.0"
 treat-inputs-as-numeric = false
 output-dir = "derived/build"
-app-file-label = {category = "Standalone Application - Arithmetic", label = "Main Function"}
+app-file-label = {category = "Hello", label = "Main Function"}
 
 [compiler.standalone.package]
 application-name = "Hello App"
