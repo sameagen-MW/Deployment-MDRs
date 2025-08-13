@@ -21,7 +21,7 @@ buildOpts.ObfuscateArchive = false;
 buildOpts.Verbose = true;
 buildOpts.EmbedArchive = true;
 buildOpts.ExecutableName = "hello";
-buildOpts.ExecutableVersion = "1.1.0";
+buildOpts.ExecutableVersion = "1.0.0";
 buildOpts.TreatInputsAsNumeric = false;
 buildResult = compiler.build.standaloneApplication(buildOpts);
 
